@@ -1,12 +1,19 @@
 {
-	"name": "intern-tutorial",
-	"version": "3.0.0",
-	"description": "Intern tutorial. Learn how to use Intern by following this tutorial!",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/theintern/intern-tutorial.git"
-	},
-	"license": "BSD-3-Clause",
-	"bugs": "https://github.com/theintern/intern-tutorial/issues",
-	"homepage": "http://theintern.io/"
+  "name": "intern-tutorial",
+  "version": "3.0.0",
+  "description": "Intern tutorial. Learn how to use Intern by following this tutorial!",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/theintern/intern-tutorial.git"
+  },
+  "license": "BSD-3-Clause",
+  "bugs": "https://github.com/theintern/intern-tutorial/issues",
+  "homepage": "http://theintern.io/",
+  "scripts": {
+    "client": "./node_modules/.bin/intern-client config=tests/intern",
+    "runner": "./node_modules/.bin/intern-runner config=tests/intern"
+  },
+  "devDependencies": {
+    "intern": "^3.4.2"
+  }
 }
